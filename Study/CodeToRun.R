@@ -32,10 +32,10 @@ library(stringr)
 # - Norway: NLHR@UiO
 # - UK: CPRD
 # Additional characters are allowed (e.g. CPRD GOLD, SCIFI-PEARL-v2...)
-database_name <- "CPRD GOLD"
+database_name <- "..."
 
 # Connection details
-server_dbi <- Sys.getenv("DB_SERVER_DBI_gd")
+server_dbi <- Sys.getenv("DB_SERVER_DBI")
 user <- Sys.getenv("DB_USER")
 password <- Sys.getenv("DB_PASSWORD")
 port <- Sys.getenv("DB_PORT")
@@ -50,25 +50,23 @@ db <- dbConnect(
   password = password
 )
 
-cdm_database_schema <- "public"
-results_database_schema <- "results"
+cdm_database_schema <- "..."
+results_database_schema <- "..."
 
 # cohort stem where cohorts will be instantiated
-table_stem <- "nur_br"
+table_stem <- "..."
 
 cdm <- cdmFromCon(
   con = db,
   cdmSchema = cdm_database_schema,
   writeSchema = results_database_schema,
   writePrefix = tolower(table_stem),
-  cdmName = database_name,
-  cohortTables = c("base", "bmi_measurement", "mother_table", "body_weight"),
-  .softValidation = TRUE
+  cdmName = database_name
 )
 
 # Pregnancy tables details:
-mother_table_schema <- cdm_database_schema
-mother_table_name <- "pregnancy_episode"
+mother_table_schema <- "..."
+mother_table_name <- "..."
 
 # minimum counts to report
 minimum_counts <- 5
