@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+**/Results_CPRD GOLD/*
+**/CodeToRunLocal.R
+Downloads/*
+*.zip
+**/data/*.csv
+**/data/*.RData
+**/nco'weighted.R
+**/irr.R
+**data2/*
+**/CopyOfdata/*
+**/data copy/*
