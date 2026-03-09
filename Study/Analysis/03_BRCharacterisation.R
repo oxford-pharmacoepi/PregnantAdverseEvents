@@ -5,7 +5,7 @@ cdm$characteristics_aesi_30 <- getMatchedCohort(cdm$ir_aesi_30, settings(cdm$aes
 cdm$characteristics_aesi_inf <- getMatchedCohort(cdm$ir_aesi_inf, settings(cdm$aesi_inf)$cohort_name, name = "characteristics_aesi_inf")
 cdm$characteristics_aesi_90 <- getMatchedCohort(cdm$ir_aesi_90, settings(cdm$aesi_90)$cohort_name, name = "characteristics_aesi_90")
 cdm$characteristics_aesi_180 <- getMatchedCohort(cdm$ir_aesi_180, settings(cdm$aesi_180)$cohort_name, name = "characteristics_aesi_180")
-cdm$characteristics_mae <- getMatchedCohort(cdm$ir_mae, c("antepartum_haemorrhage", "dysfunctional_labour", "eclampsia", "ectopic_pregnancy", "gestational_diabetes", "hellp", "preeclampsia"), name = "characteristics_mae")
+cdm$characteristics_mae <- getMatchedCohort(cdm$ir_mae, c("eclampsia", "ectopic_pregnancy", "gestational_diabetes", "hellp", "preeclampsia"), name = "characteristics_mae")
 cdm$characteristics_antepartum_haemorrhage <- getMatchedCohort(cdm$ir_antepartum_haemorrhage, "antepartum_haemorrhage", name = "characteristics_antepartum_haemorrhage")
 cdm$characteristics_dysfunctional_labour <- getMatchedCohort(cdm$ir_dysfunctional_labour, "dysfunctional_labour", name = "characteristics_dysfunctional_labour")
 cdm$characteristics_maternal_death <- getMatchedCohort(cdm$ir_maternal_death, "maternal_death", name = "characteristics_maternal_death")
