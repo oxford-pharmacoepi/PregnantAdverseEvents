@@ -514,12 +514,12 @@ getBRCharacteristics <- function(cohort, strata) {
           targetCohortTable = "covariates_inf", window = c(-Inf, 0)
         ),
         # covariates1 (-365, 0)
-        "Covariates in the past 5 years" = list(
-          targetCohortTable = "covariates_5", window = c(-365*5, 0)
+        "Covariates in the past year" = list(
+          targetCohortTable = "covariates_5", window = c(-365, 0)
         ),
         # Comedications
-        "Medications in the past year" = list(
-          targetCohortTable = "comedications", window = c(-365, 0)
+        "Medications in the past 6 months" = list(
+          targetCohortTable = "comedications", window = c(-180, 0)
         )
       ),
       otherVariables = otherVariables,
