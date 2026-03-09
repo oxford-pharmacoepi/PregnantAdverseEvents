@@ -423,6 +423,7 @@ cdm <- bind(
   cdm$preterm_labour_denominator, 
   cdm$postpartum_6_weeks_denominator, 
   cdm$postpartum_12_weeks_denominator, 
+  cdm$postpartum_12_weeks_denominator_sens,
   cdm$maternal_death_denominator,
   cdm$antepartum_haemorrhage_denominator,
   cdm$dysfunctional_labour_denominator,
