@@ -78,7 +78,7 @@ results <- paste0("Results_", cdmName(cdm))
 sensitvitySCIFIPEARL <- FALSE
 
 # Choose code to run
-  runInstantiateCohorts <- TRUE
+runInstantiateCohorts <- TRUE
 runBackgroundRates <- TRUE
 runBRCharacteristics <- TRUE
 
