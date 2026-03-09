@@ -84,7 +84,7 @@ if (runBackgroundRates) {
         "preterm_labour_denominator", "postpartum_6_weeks_denominator", 
         "postpartum_12_weeks_denominator", "maternal_death_denominator",
         "dysfunctional_labour_denominator", "antepartum_haemorrhage_denominator",
-        "postpartum_12_weeks_denominator_sensitivity"
+        "postpartum_12_weeks_denominator_sens"
       ),
       .softValidation = TRUE
     )
@@ -108,7 +108,8 @@ if (runBRCharacteristics) {
         "ir_aesi_30", "ir_aesi_inf", "ir_aesi_90", "ir_aesi_180",
         "ir_mae", "ir_maternal_death", "ir_postpartum_endometritis",
         "ir_postpartum_haemorrhage", "ir_preterm_labour", "ir_miscarriage", 
-        "ir_stillbirth", "ir_antepartum_haemorrhage", "ir_dysfunctional_labour"
+        "ir_stillbirth", "ir_antepartum_haemorrhage", "ir_dysfunctional_labour",
+        "ir_postpartum_haemorrhage_sens"
       ),
       .softValidation = TRUE
     )
