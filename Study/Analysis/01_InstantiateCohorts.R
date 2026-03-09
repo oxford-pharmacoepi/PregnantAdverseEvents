@@ -193,7 +193,8 @@ cdm <- omopgenerics::bind(cdm$obesity, cdm$covariates_5, name = "covariates_5")
 ## Comedications ----
 comedications <- c(
   "nsaids", "antidepressants", "antiepileptics", "antiinflammatory_antirheumatic",
-  "diabetes_treatments", "opioids", "treatment_acid_related_disorder"
+  "diabetes_treatments", "opioids", "treatment_acid_related_disorder", 
+  "antithrombotics", "corticosteroids", "immunosupressants"
 )
 cdm$comedications <- cdm$base |>
   subsetCohorts(cohortId = comedications, name = "comedications")
@@ -440,6 +441,9 @@ bind(
 
 bind(
   cohortCodeUseFromCohort(cdm$aesi),
-  cohortCodeUseFromCohort(cdm$mae)
+  cohortCodeUseFromCohort(cdm$mae),
+  cohortCodeUseFromCohort(cdm$comedications), 
+  cohortCodeUseFromCohort(cdm$covariates_inf),
+  cohortCodeUseFromCohort(cdm$covariates_5)
 ) |>
   exportSummarisedResult(path = output_folder, fileName = paste0("cohort_code_use_br_", cdmName(cdm), ".csv"))
